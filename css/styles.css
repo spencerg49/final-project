@@ -312,12 +312,15 @@ section h1 {
     grid-row: 2/3;
   }
 
-.portfolio img {
-  width: 100%;
-}
-.portfolio h2 {
-  text-align: center;
-}
+  .portfolio img {
+    width: 100%;
+  }
+  .portfolio h2 {
+    text-align: center;
+  }
+  .portWeb button {
+    margin: auto;
+  }
 
   .portWeb {
     grid-column: 1/2;
