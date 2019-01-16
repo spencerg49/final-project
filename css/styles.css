@@ -34,6 +34,14 @@ a {
   color: inherit;
 }
 
+section {
+  margin-bottom: 10px;
+}
+
+section h1 {
+  text-align: center;
+}
+
 .btn {
   display: inline-block;
   width: 100%;
@@ -107,10 +115,7 @@ a {
 .name {
   color: #fff;
   font: 1.25em 'Helvetica', georgia, sans-serif;
-  letter-spacing: -0.025em;
-  line-height: 2.4;
-  text-transform: lowercase;
-
+  line-height: 4;
   justify-self: left;
 }
 
@@ -170,8 +175,13 @@ a {
 }
 
 .bio {
-  background-color: aliceblue;
-  overflow: hidden;
+  background-color: white;
+}
+.portfolio{
+  background-color: #E2FFE3;
+}
+.experience{
+  background-color: #FFF7D1;
 }
 
 .grading {
@@ -223,6 +233,10 @@ a {
     width: 600px;
     margin: 0 auto;
   }
+  .bioPic img {
+    height: 200px;
+  margin: auto;
+  }
 
   .bio-grid {
     display: grid;
@@ -241,7 +255,7 @@ a {
     /* Use this as a guide:
       https://codepen.io/roccop/pen/WLQJXY?editors=1100
      */
-     grid-template-columns: repeat(4, 1fr);
+     grid-template-columns: repeat(2, 1fr);
      column-gap: 1em;
      row-gap: 1em;
   }
@@ -283,6 +297,11 @@ a {
     grid-column: 1/2;
     grid-row: 1/2;
   }
+  .bioPic img {
+    height: 400px;
+  margin: auto;
+  }
+
   .bioInfo {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -294,18 +313,25 @@ a {
   .portWeb {
     grid-column: 1/2;
     grid-row: 1/2;
+    border: 1px solid black;
   }
   .portGraphic {
     grid-column: 2/3;
     grid-row: 1/2;
+    border: 1px solid black;
+
   }
   .portPhoto {
     grid-column: 3/4;
     grid-row: 1/2;
+    border: 1px solid black;
+
   }
   .portAct {
     grid-column: 4/5;
     grid-row: 1/2;
+    border: 1px solid black;
+
   }
 
   .experience {
