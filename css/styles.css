@@ -4,6 +4,7 @@
 body {
   background-color: #e5edf2;
   color: #201a16;
+  /* hey I"m not sure it makes sense to use em this high up since this em is a relative unit (and i'm not sure what it's relative to)? */
   font: 1em tahoma, sans-serif;
   line-height: 1;
 }
@@ -152,6 +153,13 @@ section h1 {
   font-size: 1.25em;
 }
 
+.topMenu {
+  grid-column: 1 / 3;
+}
+.topMenu li {
+  list-style: none;
+  border: 1px solid #ccc;
+}
 
 /*** MAIN CONTENT RULES ****************/
 
@@ -276,6 +284,7 @@ section h1 {
 @media screen and (min-width: 900px) {
 
   .mainAll {
+    /* hey! This will cause horizontal scrolling between 900 - 1200px approximately, did you mean to set the width to narrower than 900?  Alternatively, could you set this with relative units (e.g. `90vw` or 90% of the viewport width?) */
     width: 1200px;
     margin: 0 auto;
     display: grid;
