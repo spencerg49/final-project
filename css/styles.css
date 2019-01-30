@@ -204,16 +204,51 @@ section h1 {
   background-color: blue;
 }
 
-.lightBox {
-  min-height: 80vh;
-  min-width: 80vw;
-
-  position: absolute;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.modal {
+  display:none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30,30,30,0.8);
 }
+.portPopup {
+  display: block;
+  width: 75vw;
+  height: 80vh;
+  padding: 2em;
+  background-color: #b9c2cc;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+button.close {
+  display: block;
+  border: none;
+  outline: none;
+  width: 1.25em;
+  height: 1.25em;
+  font: 1.5em Arial;
+  background-color: #bc2a39;
+  color: #e7c0b9;
+  border-radius: 50%;
+  line-height: 0;
+  position: absolute;
+  top: 0.25em;
+  right: 0.25em;
+  cursor: pointer;
+}
+
+button.close:active {
+  background-color: #d4636f;
+}
+
+
 
 /******************************************
               MEDIA QUERIES
