@@ -37,7 +37,7 @@ var imageNumber = function (image=1) {
   var imageElement = document.getElementById('image');
   var nextElement = document.getElementById('nextBtn');
 
-
+imageElement.setAttribute('src', `images/graph${image}.jpg`);
 
 };
 
