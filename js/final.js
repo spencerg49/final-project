@@ -26,15 +26,21 @@ document.getElementById('actJava').addEventListener('click', function () {
 
 document.getElementById('close').addEventListener('click', function() {
     modalElement.style.display = "none";
-    examPic.setAttribute('src',`images/graph.jpg`);
+    examPic.setAttribute('src',`images/graph1.jpg`);
 });
 
-var imageNumber = function (image=1) {
-  var image = Math.floor( Math.random() * 4 ) + 1;
+var image = 1;
+
+var imageNumber = function () {
+  image += 1;
+
+  if (image > 4) {
+    image = 1;
+  }
 
   console.log(`You rolled: ${image}`);
 
-  var imageElement = document.getElementById('image');
+  var imageElement = document.getElementById('examplePic');
   var nextElement = document.getElementById('nextBtn');
 
 imageElement.setAttribute('src', `images/graph${image}.jpg`);
