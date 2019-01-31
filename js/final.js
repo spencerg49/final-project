@@ -26,7 +26,7 @@ document.getElementById('actJava').addEventListener('click', function () {
 
 document.getElementById('close').addEventListener('click', function() {
     modalElement.style.display = "none";
-    examPic.setAttribute('src',`images/graph.jpg`);
+    examPic.setAttribute('src',`images/graph1.jpg`);
 });
 
 var imageNumber = function (image=1) {
