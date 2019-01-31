@@ -7,6 +7,7 @@ var examPic = document.getElementById('examplePic');
 document.getElementById('webJava').addEventListener('click', function () {
   modalElement.style.display = "block";
   modalElement.style.opacity = 1;
+  examPic.setAttribute('src',`images/web.png`);
 });
 
 document.getElementById('graphJava').addEventListener('click', function () {
@@ -48,3 +49,6 @@ imageElement.setAttribute('src', `images/graph${image}.jpg`);
 };
 
 document.getElementById('nextBtn').addEventListener('click', imageNumber);
+
+// add event listener here for .nav-btn (add Id attribute to that element if needed)
+// inside the event listener function, change the "height" style of the .topMenu element.

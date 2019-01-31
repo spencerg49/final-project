@@ -134,11 +134,18 @@ section h1 {
   background-color: #fff;
   margin: 0.375em 0;
 }
-
+.menuNav {
+  list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .top {
   grid-column: 1/3;
 }
-
+.topMenu {
+  justify-content: center;
+  grid-column: 1 / -1;
+}
 .menu-item {
   margin: 1em 0;
 }
@@ -264,6 +271,15 @@ button.close:active {
   float: left;
 }
 
+.bioPic img, .portWeb img , .portGraphic img, .portPhoto img, .portAct img {
+  width: 100%;
+  object-fit: cover;
+}
+.topMenu {
+  transition: 1s all;
+  height: 0px;
+}
+
 /******************************************
               MEDIA QUERIES
 *******************************************/
@@ -277,6 +293,7 @@ button.close:active {
   .bioPic img {
     height: 200px;
   margin: auto;
+  width: 100%;
   }
   .portfolio img {
     width: 100%;
@@ -289,7 +306,7 @@ button.close:active {
     margin: auto;
   }
 
-  .bio-grid {
+   .bio-grid {
     display: grid;
      grid-template-columns: 50% 50%;
      /* grid-template-columns: repeat(2, 1fr); */
